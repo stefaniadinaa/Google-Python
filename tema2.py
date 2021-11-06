@@ -32,7 +32,7 @@ def suma_nr_impare(n):
         return n + suma_nr_impare(n - 1)
     else:
         return suma_nr_impare(n - 1)
-
+# Exercitiul 3
 def readf():
     input1 = input("Scrie ceva: ")
     while input1 is not int:
