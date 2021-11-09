@@ -1,7 +1,4 @@
 # X and O
-
-from random import randrange
-
 # functie care actualizeaza harta
 def harta(x, XO):
       newstring = ""
@@ -71,7 +68,6 @@ def check(map):
 
 
 XO = "_|_|_\n_|_|_\n_|_|_"
-XOplay = ''
 newstring = ""
 
 # ce locuri am ocupat deja
@@ -79,7 +75,7 @@ already_have = []
 
 # al cui este randul
 flag = 1
-
+k = 0
 # daca s-a terminat runda
 checkul = 0
 
