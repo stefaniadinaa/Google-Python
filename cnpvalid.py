@@ -4,7 +4,7 @@ import datetime
 def verif_lungime(cnp):
     msg = "Lungimea CNP-ului nu este valida"
     if len(cnp) == 13:
-        print("CNP valid")
+        print("Lungimea este valida")
     else:
         return msg
 
