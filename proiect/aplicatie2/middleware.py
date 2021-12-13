@@ -22,6 +22,7 @@ class RefreshMiddleware:
                         break
                     else:
                         action = 'created'
+                print(action)
                 Logs.objects.create(user_id=request.user.id, action=action, url=request.path)
         response = self.get_response(request)
         return response
