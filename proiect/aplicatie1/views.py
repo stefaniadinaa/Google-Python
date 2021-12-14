@@ -54,7 +54,7 @@ class ListLocationView(LoginRequiredMixin, ListView):
     def get_queryset(self):
         return Location.objects.filter(active=1)
 
-
+#verifica daca sunt autentificata
 @login_required
 def delete_location(request, pk):
     if request.user.is_authenticated:
